@@ -1,6 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
+import yuzuklerinefendisi from "../assets/icons/yüzüklerin-efendisi.jpg";
 
 
 
@@ -26,8 +27,8 @@ function classNames(...classes) {
                   <span className="sr-only">Open user menu</span>
                   <img
                     className="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
+                    src="yuzuklerinefendisi"
+                    alt="user"
                   />
                 </Menu.Button>
               </div>
@@ -50,7 +51,7 @@ function classNames(...classes) {
                           "block px-4 py-2 text-sm text-gray-700"
                         )}
                       >
-                        Your Profile
+                       Register
                       </a>
                     )}
                   </Menu.Item>
@@ -63,7 +64,7 @@ function classNames(...classes) {
                           "block px-4 py-2 text-sm text-gray-700"
                         )}
                       >
-                        Settings
+                        Login
                       </a>
                     )}
                   </Menu.Item>
@@ -76,7 +77,7 @@ function classNames(...classes) {
                           "block px-4 py-2 text-sm text-gray-700"
                         )}
                       >
-                        Sign out
+                        Log out
                       </a>
                     )}
                   </Menu.Item>
