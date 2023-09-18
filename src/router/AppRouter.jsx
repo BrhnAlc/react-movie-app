@@ -9,7 +9,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 
 const AppRouter = () => {
-  return 
+  return (
     <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -18,9 +18,8 @@ const AppRouter = () => {
     <Route path="/register" element={<Register/>}/>
     <Route path="/details/:id" element={<MovieDetail/>}/>
     </Routes>
-    
-    </BrowserRouter>;
-    
-};
+    </BrowserRouter>
+    );
+  };
 
 export default AppRouter;
