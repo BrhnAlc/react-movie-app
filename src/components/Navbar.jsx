@@ -1,7 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import yuzuklerinefendisi from "../assets/icons/yüzüklerin-efendisi.jpg";
+import yuzuklerinEfendisi from "../assets/icons/yüzüklerin-efendisi.jpg";
 
 
 
@@ -11,6 +11,7 @@ function classNames(...classes) {
 
   function Navbar() {
   return (
+    <>
     <Disclosure
       as="nav"
       className="bg-neutral-100 dark:bg-gray-900 py-3 dark:text-white fixed top-0 z-20 w-full"
@@ -27,7 +28,7 @@ function classNames(...classes) {
                   <span className="sr-only">Open user menu</span>
                   <img
                     className="h-8 w-8 rounded-full"
-                    src="yuzuklerinefendisi"
+                    src={yuzuklerinEfendisi}
                     alt="user"
                   />
                 </Menu.Button>
@@ -88,6 +89,8 @@ function classNames(...classes) {
         </div>
       </div>
     </Disclosure>
+    <div className="h-[55px]"></div>
+    </>
   );
 }
     
